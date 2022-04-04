@@ -1,10 +1,22 @@
+import React from 'react'
 import './App.css';
-import DataFetching from './components/DataFetching';
+import CounterTwo from './components/CounterTwo';
+
+// export const UserContext = React.createContext()
+// export const ChannelContext = React.createContext()
+// export const HomeContext = React.createContext()
 
 function App() {
   return (
     <div className="App">
-      <DataFetching />
+      {/* <UserContext.Provider value="Nabendu">
+        <ChannelContext.Provider value="TWD">
+          <HomeContext.Provider value="Home">
+            <GrandParent />
+          </HomeContext.Provider>
+        </ChannelContext.Provider>
+      </UserContext.Provider> */}
+      <CounterTwo />
     </div>
   );
 }
