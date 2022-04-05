@@ -1,22 +1,37 @@
-import React from 'react'
+import React, { useReducer } from 'react'
 import './App.css';
-import CounterTwo from './components/CounterTwo';
+import HookTimer from './components/HookTimer';
+// import Grandparent1 from './components/Grandparent1';
+// import Grandparent2 from './components/Grandparent2';
+// import GrandParent3 from './components/GrandParent3';
 
-// export const UserContext = React.createContext()
-// export const ChannelContext = React.createContext()
-// export const HomeContext = React.createContext()
+// export const CounterContext = React.createContext()
+
+// const initialState = 0;
+// const reducer = (state, action) => {
+//     switch(action){
+//         case 'increment':
+//             return state + 1
+//         case 'decrement':
+//             return state - 1
+//         case 'reset':
+//             return initialState
+//         default:
+//             return state
+//     }
+// }
 
 function App() {
+  // const [count, dispatch] = useReducer(reducer, initialState)
   return (
     <div className="App">
-      {/* <UserContext.Provider value="Nabendu">
-        <ChannelContext.Provider value="TWD">
-          <HomeContext.Provider value="Home">
-            <GrandParent />
-          </HomeContext.Provider>
-        </ChannelContext.Provider>
-      </UserContext.Provider> */}
-      <CounterTwo />
+      {/* <CounterContext.Provider value={{countState: count, countDispatch: dispatch}}>
+        <h1>Count - {count}</h1>
+        <Grandparent1 />
+        <Grandparent2 />
+        <GrandParent3 />
+      </CounterContext.Provider> */}
+      <HookTimer />
     </div>
   );
 }
